@@ -1,6 +1,6 @@
 ﻿namespace TodoApi
 {
-
+    // a model that represents data that the app manages
     public class Todo
     {
         public int Id { get; set; }
