@@ -3,6 +3,7 @@ using TodoApi;
 
 var builder = WebApplication.CreateBuilder(args);
 
+//adds db context to DependencyInjection container
 builder.Services.AddDbContext<TodoDb>(opt => opt.UseInMemoryDatabase("TodoList"));
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
